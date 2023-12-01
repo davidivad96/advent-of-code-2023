@@ -23,6 +23,6 @@ Commands:
 ### Example
 
 ```bash
-npx ts-node src/cli/index.ts new 1
-npx ts-node src/cli/index.ts run 1 --file sample.txt --part 2
+aoc new 1
+aoc run 1 --file sample.txt --part 2
 ```
