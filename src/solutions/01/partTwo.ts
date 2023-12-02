@@ -1,8 +1,7 @@
 import { numWordToStr, reverseString } from "./utils";
 
 const regex = new RegExp(
-  "\\d|one|eno|two|owt|three|eerht|four|ruof|five|evif|six|xis|seven|neves|eight|thgie|nine|enin",
-  "g"
+  "\\d|one|eno|two|owt|three|eerht|four|ruof|five|evif|six|xis|seven|neves|eight|thgie|nine|enin"
 );
 
 export const partTwo = (input: string[]): number =>
