@@ -1,5 +1,3 @@
-export const reverseString = (str: string) => str.split("").reverse().join("");
-
 export const numWordToStr: { [key: number | string]: string } = {
   one: "1",
   eno: "1",

@@ -1,24 +1,11 @@
 import { partOne } from "./partOne";
 import { partTwo } from "./partTwo";
+import { transposeStringsArray } from "../../utils";
 
 export type Input = {
   image: string[];
   expandedRows: number[];
   expandedCols: number[];
-};
-
-const transpose = (arr: string[]) => {
-  const rows = arr.length;
-  const cols = arr[0].length;
-  let transposedArr = [];
-  for (let i = 0; i < cols; i++) {
-    let newRow = "";
-    for (let j = 0; j < rows; j++) {
-      newRow += arr[j][i];
-    }
-    transposedArr.push(newRow);
-  }
-  return transposedArr;
 };
 
 const preprocess = (text: string): Input => {
@@ -30,7 +17,7 @@ const preprocess = (text: string): Input => {
       expandedRows.push(i);
     }
   }
-  const transposedImage = transpose(image);
+  const transposedImage = transposeStringsArray(image);
   for (let i = 0; i < transposedImage.length; i++) {
     if (transposedImage[i].match(/^\.+$/)) {
       expandedCols.push(i);
