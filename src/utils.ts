@@ -1,6 +1,6 @@
 export const reverseString = (str: string) => str.split("").reverse().join("");
 
-export const transposeStringsArray = (arr: string[]) => {
+export const transposeStringsArray = (arr: string[]): string[] => {
   const rows = arr.length;
   const cols = arr[0].length;
   const transposedArr = [];
