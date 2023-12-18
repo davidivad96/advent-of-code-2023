@@ -1,9 +1,4 @@
-export enum Direction {
-  UP = "UP",
-  DOWN = "DOWN",
-  LEFT = "LEFT",
-  RIGHT = "RIGHT",
-}
+import { Direction } from "../../utils";
 
 export const getInitialMovement = (pipes: {
   [key in Direction]: string;

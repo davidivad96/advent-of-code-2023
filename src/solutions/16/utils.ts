@@ -1,10 +1,3 @@
-export enum Direction {
-  UP = "UP",
-  DOWN = "DOWN",
-  LEFT = "LEFT",
-  RIGHT = "RIGHT",
-}
-
 type Node = { position: [number, number]; direction: Direction };
 
 const insertNode = (node: Node, nodes: Node[], visitedNodes: string[]) => {

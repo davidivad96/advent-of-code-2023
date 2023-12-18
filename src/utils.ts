@@ -1,3 +1,10 @@
+export enum Direction {
+  UP = "UP",
+  DOWN = "DOWN",
+  LEFT = "LEFT",
+  RIGHT = "RIGHT",
+}
+
 export const reverseString = (str: string) => str.split("").reverse().join("");
 
 export const transposeStringsArray = (arr: string[]): string[] => {
