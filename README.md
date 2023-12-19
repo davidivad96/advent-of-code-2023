@@ -1,8 +1,8 @@
 # advent-of-code-2023
 
-![](https://img.shields.io/badge/day%20📅-18-blue)
-![](https://img.shields.io/badge/stars%20⭐-32-yellow)
-![](https://img.shields.io/badge/days%20completed-16-red)
+![](https://img.shields.io/badge/day%20📅-19-blue)
+![](https://img.shields.io/badge/stars%20⭐-34-yellow)
+![](https://img.shields.io/badge/days%20completed-17-red)
 
 https://adventofcode.com/2023
 
