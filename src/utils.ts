@@ -20,3 +20,5 @@ export const transposeStringsArray = (arr: string[]): string[] => {
   }
   return transposedArr;
 };
+
+export const deepClone = (obj: any) => JSON.parse(JSON.stringify(obj));
