@@ -28,3 +28,9 @@ export const lcm = (arr: number[]) => {
   const _lcm = (x: number, y: number) => (x * y) / gcd(x, y);
   return [...arr].reduce((a, b) => _lcm(a, b));
 };
+
+export const indexArrayToObject = (length: number) =>
+  Array.from({ length }, (_, i) => i).reduce(
+    (acc, curr) => ({ ...acc, [curr]: [] }),
+    {}
+  );
