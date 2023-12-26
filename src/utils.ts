@@ -22,3 +22,9 @@ export const transposeStringsArray = (arr: string[]): string[] => {
 };
 
 export const deepClone = (obj: any) => JSON.parse(JSON.stringify(obj));
+
+export const lcm = (arr: number[]) => {
+  const gcd = (x: number, y: number) => (!y ? x : gcd(y, x % y));
+  const _lcm = (x: number, y: number) => (x * y) / gcd(x, y);
+  return [...arr].reduce((a, b) => _lcm(a, b));
+};

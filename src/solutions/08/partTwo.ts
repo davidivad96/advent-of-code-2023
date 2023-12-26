@@ -1,5 +1,6 @@
 import { Input } from ".";
-import { instructionsGenerator, lcm } from "./utils";
+import { instructionsGenerator } from "./utils";
+import { lcm } from "../../utils";
 
 export const partTwo = ([instructions, nodes]: Input) => {
   let currentNodes = Object.keys(nodes).filter((node) => node.endsWith("A"));
