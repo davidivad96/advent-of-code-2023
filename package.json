@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/davidivad96/advent-of-code-2023#readme",
   "dependencies": {
+    "@graph-algorithm/minimum-cut": "^2.0.0",
     "commander": "^11.1.0",
+    "regenerator-runtime": "^0.14.1",
     "z3-solver": "^4.12.4"
   },
   "devDependencies": {
